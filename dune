@@ -1,0 +1,16 @@
+(include_subdirs unqualified)
+
+(library
+ (name vault_eio)
+ (public_name vault-eio)
+ (libraries
+  cohttp
+  cohttp-eio
+  eio
+  yojson
+  uri
+  ca-certs
+  tls
+  tls-eio
+  domain-name
+  unix))

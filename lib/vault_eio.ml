@@ -84,7 +84,6 @@ let value_to_string = function
   | `Null -> Ok ""
   | `Assoc _ -> Error "cannot use JSON object as environment value"
   | `List _ -> Error "cannot use JSON array as environment value"
-  | value -> Ok (Yojson.Safe.to_string value)
 
 let as_source entries =
   let table = Hashtbl.create (List.length entries) in

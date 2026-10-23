@@ -1,0 +1,5 @@
+Vault source lookup with a local synthetic map
+APP_MODE: demo
+PORT: 8080
+MISSING: <not found>
+No Vault connection or real secrets used.

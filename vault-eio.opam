@@ -3,15 +3,15 @@ synopsis: "HashiCorp Vault helpers for OCaml Eio applications"
 maintainer: "OlegHQ"
 authors: "OlegHQ"
 license: "MIT"
-homepage: "https://github.com/OlegHQ/vault-eio"
-bug-reports: "https://github.com/OlegHQ/vault-eio/issues"
+homepage: "https://github.com/Microapps-Labs/vault-eio"
+bug-reports: "https://github.com/Microapps-Labs/vault-eio/issues"
 depends: [
   "ocaml" {>= "5.2.0"}
   "dune" {>= "3.22"}
   "cohttp"
   "cohttp-eio"
   "eio"
-  "yojson"
+  "yojson" {>= "3.0"}
   "uri"
   "ca-certs"
   "tls"

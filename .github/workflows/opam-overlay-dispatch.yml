@@ -1,4 +1,4 @@
-name: Notify OlegHQ opam overlay
+name: Notify Microapps-Labs opam overlay
 
 on:
   push:
@@ -25,5 +25,5 @@ jobs:
             --header "Accept: application/vnd.github+json" \
             --header "Authorization: Bearer $OVERLAY_TOKEN" \
             --header "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/OlegHQ/opam-overlay/dispatches \
+            https://api.github.com/repos/Microapps-Labs/opam-overlay/dispatches \
             --data "{\"event_type\":\"publish-opam-release\",\"client_payload\":{\"source\":\"${SOURCE}\",\"tag\":\"${TAG}\"}}"
